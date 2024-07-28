@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Validating Forms</title>
+    <!-- font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Mukta:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <!-- external css -->
+    <link rel="stylesheet" href="form_validation.css">
+</head>
+<body>
+    <div id="overall-div">
+        <form action="">
+            <h1>Validating Web forms</h1>
+            <div id="name">
+                <div id="fname">
+                    <label for="fname">First Name</label><br>
+                    <input type="text" name="fname" id="fname" required>
+                    <p>first name must be alphanumeric and contain 3 - 16 characters </p>
+                </div>
+                <div id="lname">
+                    <label for="lname">Last Name</label><br>
+                    <input type="text" name="lname" id="lname" required>
+                    <p>first name must be alphanumeric and contain 3 - 16 characters </p>
+                </div>
+            </div>
+            <div id="email">
+                <label for="mail">Email</label><br>
+                <input type="email" name="mail" id="mail" required>
+                <p>email must be a vaild address, eg.example@example.com </p>
+            </div>
+            <div id="pass">
+                <label for="pass">password</label><br>
+                <input type="password" name="pass" id="pass" required>
+                <p>password must be alphanumeric and contain 3 -16 characters</p>
+            </div>
+            <div id="phno">
+                <label for="phno">TelePhone </label><br>
+                <input type="tel" name="phno" id="phno" required>
+                <p>A vaild TelePhone number(10 digits and 000-000-0000)</p>
+            </div>
+            <div id="bio">
+                <label for="bio">Bio</label><br>
+                <input type="text" name="bio" id="bio" required>
+                <p> Bio must contain only lowercase letters,underscores,hyphens and be 8 - 50 characters </p>
+            </div>
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+    <!-- js -->
+    <script src="form_validation.js"></script>
+</body>
+</html>

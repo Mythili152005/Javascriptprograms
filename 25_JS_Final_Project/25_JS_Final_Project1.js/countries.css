@@ -1,0 +1,145 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+:root{
+    --bg-color:#ffa500;
+    --bg-color2: #f5f5f5;
+    --bg-color3:#ffffff;
+    --hover: #ff7f00;
+    --txt-color:#ffa500;
+    --txt-color2:#000;
+}
+* {
+    font-family: "Montserrat", sans-serif;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    background-color: var(--bg-color2);
+}
+
+#header {
+    margin-top: 35px;
+}
+
+#header h1 {
+    color:var(--txt-color);
+    font-size: 40px;
+    font-weight: 500;
+}
+
+#header p {
+    font-size: larger;
+    text-transform: capitalize;
+    margin-bottom: 25px;
+}
+
+#head {
+    padding: 30px;
+    background-color:var(--bg-color3)
+}
+
+#head button {
+    background-color: var(--bg-color);
+    height: 40px;
+    width: 20%;
+    padding: 10px;
+    margin-right: 15px;
+    border: none;
+    text-transform: uppercase;
+    font-weight: 400;
+    font-size: medium;
+    cursor: pointer;
+}
+
+#head button:hover {
+    background-color:var(--hover);
+}
+
+#graph-title {
+    font-size: 24px;
+    margin: 20px;
+    background-color:var(--bg-color3);
+}
+
+.graph-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    height: 400px;
+    width: 80%;
+    margin: 20px auto;
+    background-color:var(--bg-color3);
+    border: 1px solid var(--bg-color2);
+    padding: 10px;
+    position: relative;
+}
+
+.bar {
+    width: auto; 
+    margin-bottom: 10px;
+    background-color:var(--bg-color);
+    color: var(--txt-color2);
+    text-align: left;
+    font-size: 15px;
+    display: flex;
+    align-items: center;
+    height: 8%;
+    padding-left: 10px;
+}
+
+.bar span {
+    margin-right: 10px;
+    background-color: var(--bg-color);
+}
+#Countries{
+    padding: 30px;
+    height: fit-content;
+    background-color:var(--bg-color3);
+}
+#Countries input{
+    border:1px solid grey; 
+    border-radius: 15px;
+    width: 40%;
+    height: 30px;
+    margin: 20px;
+}
+form{
+    background-color: var(--bg-color3);
+}
+#Countries button{
+    background-color: var(--bg-color);
+    height: 40px;
+    width: 20%;
+    padding: 10px;
+    margin-top: 20px;
+    margin-right: 15px;
+    border: none;
+    text-transform: uppercase;
+    font-weight: 400;
+    font-size: medium;
+    cursor: pointer;
+}
+
+#country-container img {
+    width: 50px;
+    height: auto;
+    vertical-align: middle;
+    margin-right: 10px;
+}
+
+#country-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px auto;
+}
+
+#country-table th, #country-table td {
+    border: 1px solid var(--bg-color);
+    padding: 8px;
+    text-align: left;
+}
+
+#country-table th {
+    background-color: var(--bg-color);
+    color: var(--txt-color2);
+}

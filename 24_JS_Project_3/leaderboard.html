@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Leaderboard</title>
+    <!-- external css -->
+    <link rel="stylesheet" href="leaderboard.css">
+    <!-- icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <h1>Leaderboard</h1>
+    <div id="Score_table">
+        <div id="thead">
+            <input type="text" id="first-name" placeholder="First Name">
+            <input type="text" id="last-name" placeholder="Last Name">
+            <input type="text" id="countries" placeholder="Countries">
+            <input type="number" id="player-score" placeholder="Player Score">
+            <button>Add Player</button>
+            <p id="error-message"></p>
+        </div>
+        <div id="tbody">
+            <div id="data"></div>
+        </div>
+    </div>
+    <script src="leaderboard.js"></script>
+</body>
+</html>
